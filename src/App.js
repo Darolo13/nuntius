@@ -1,9 +1,10 @@
+import Home from "./pages/Home";
+
+// material-ui icons
+import { Person } from '@material-ui/icons';
+
 function App() {
-  return (
-    <div>
-      Hello
-    </div>
-  );
+  return <Home />
 }
 
 export default App;
