@@ -9,7 +9,7 @@ function Topbar() {
       </div>
       <div className="topbar-center">
         <span className="topbar-center__search-bar">
-          <Search />
+          <Search className="topbar-center__search-bar--search-icon" />
           <input
             placeholder="Search for a friend, post or video"
             className="topbar-center__search-input"
@@ -17,25 +17,29 @@ function Topbar() {
         </span>
       </div>
       <div className="topbar-right">
-        <div className="topbar__link">
-          <div className="topbar__link--item">Homepage</div>
-          <div className="topbar__link--item">Timeline</div>
+        <div className="topbar-right__link">
+          <span className="topbar-right__link--item">Homepage</span>
+          <span className="topbar-right__link--item">Timeline</span>
         </div>
-        <div className="topbar__icons">
-          <div className="topbar__icons--item">
+        <div className="topbar-right__icons">
+          <div className="topbar-right__icons--item">
             <Person />
-            <span className="topbar__icon--badge">1</span>
+            <span className="topbar-right__icon--badge">1</span>
           </div>
-          <div className="topbar__icons--item">
+          <div className="topbar-right__icons--item">
             <Chat />
-            <span className="topbar__icon--badge">2</span>
+            <span className="topbar-right__icon--badge">2</span>
           </div>
-          <div className="topbar__icons--item">
+          <div className="topbar-right__icons--item">
             <Notifications />
-            <span className="topbar__icon--badge">1</span>
+            <span className="topbar-right__icon--badge">1</span>
           </div>
         </div>
-        <img src="/assets/person/1.jpeg" alt="" className="topbar__image" />
+        <img
+          src="/assets/person/1.jpeg"
+          alt=""
+          className="topbar-right__image"
+        />
       </div>
     </div>
   );
