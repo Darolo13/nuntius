@@ -16,7 +16,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__wrapper">
-        <div className="sidebar__list">
+        <ul className="sidebar__list">
           <li className="sidebar__list--item">
             <RssFeed className="sidebar__list--item-icon" />
             <span className="sidebar__list--item-text">Feed</span>
@@ -53,7 +53,9 @@ function Sidebar() {
             <School className="sidebar__list--item-icon" />
             <span className="sidebar__list--item-text">Courses</span>
           </li>
-        </div>
+        </ul>
+        <button className="sidebar__button">Show More</button>
+        <hr className="sidebar__hr" />
       </div>
     </div>
   );
