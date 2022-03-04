@@ -1,5 +1,12 @@
 import './sidebar.css';
 
+// components
+import Friend from '../Friend';
+
+// data
+import { Users } from '../../data';
+
+// material-ui icons
 import {
   RssFeed,
   Chat,
@@ -56,6 +63,11 @@ function Sidebar() {
         </ul>
         <button className="sidebar__button">Show More</button>
         <hr className="sidebar__hr" />
+        <ul className="sidebar__friend-list">
+          {Users.map((u) => (
+            <Friend key={u.id} user={u} />
+          ))}
+        </ul>
       </div>
     </div>
   );
